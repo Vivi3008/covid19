@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Dados Covid19</title>
+</head>
+<body>
+    <h1>Dados COVID-19</h1>
+    <section>
+    <div class="box" >
+        <h2>Por estado</h2>
+        <select name="state">
+            <option value="">Selecione o estado</option>
+        </select>
+
+        <input type="hidden" name="state">
+
+        <div class="res"></div>
+    </div>
+
+    <div class="box" >
+        <h2>Por país</h2>
+        <select name="country">
+            <option value="">Selecione o país</option>
+        </select>
+
+        <input type="hidden" name="country">
+
+        <div class="res" id="2"></div>
+    </div>
+</section>
+
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
