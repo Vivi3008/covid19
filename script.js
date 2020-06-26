@@ -43,6 +43,7 @@ function covidState(e){
             div.innerHTML += `<p>Mortes: ☠️${dados.deaths}</p>`
             
         })
+        .catch( error => div.innerHTML = `<p>${error}! Não foi possível buscar os dados.</p>`)
         
 }
 
@@ -64,6 +65,7 @@ function covidCountry(e){
             div.innerHTML += `<p>Mortes:☠️ ${dados.data.deaths}</p>`
             
         })
+        .catch( error => div.innerHTML = `<p>${error}! Não foi possível buscar os dados.</p>`)
 }
 
 ufSelect.addEventListener('change', covidState)
